@@ -18,5 +18,5 @@ ActionResult Slime::performAttack()
         return ActionResult{ ActionResult::Type::Heal, 20 };
     }
 
-    return ActionResult{ ActionResult::Type::Damage, 12 };
+    return ActionResult{ ActionResult::Type::Damage, 14 };
 }
