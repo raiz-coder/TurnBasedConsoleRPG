@@ -15,11 +15,10 @@ ActionResult VampireBat::performAttack()
     {
         std::cout << "  >> " << m_name
             << " Sucks Blood -- REGENERATE! <<\n";
-        
-        ActionResult{ ActionResult::Type::Heal, 12 };
+
+        heal(12);
         return ActionResult{ ActionResult::Type::Damage, 8 };
-        
     }
 
-    return ActionResult{ ActionResult::Type::Damage, 12 };
+    return ActionResult{ ActionResult::Type::Damage, 14 };
 }
